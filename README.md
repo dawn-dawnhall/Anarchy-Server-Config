@@ -1,2 +1,15 @@
 # Anarchy-Server-Config
-一份 Minecraft 无政府服务器配置
+
+本配置主要面向无政府或半无政府服务器，但它也适合直接用于搭建普通的生存服务器。
+
+本仓库仅提供服务端与插件的配置文件，需要自行下载对应的服务端核心及插件文件并放入相应目录。
+
+本配置的反作弊功能并不完善，请自行安装并配置更严格的反作弊插件。此外，由于 `AnarchyExploitFixes` 已启用命令白名单以隐藏插件信息，每当添加新玩家命令时，务必在此插件配置文件的 `whitelisted-commands` 列表中补充对应指令，否则玩家将无法使用。
+
+默认开启 `online-mode`，支持正版及 LittleSkin 登录，可通过 MultiLogin 插件添加其他 Yggdrasil 认证源。为了保障玩家数据安全，强烈建议保持 `online-mode=true`，若确需允许离线模式玩家加入，建议对接 Velocity 代理并使用 LimboAuth 或使用登录服进行身份验证。
+
+# 核心与插件
+
+**核心**：[Leaf 1.21.11](https://www.leafmc.one) [下载地址 1](https://api.leafmc.one/v2/projects/leaf/versions/1.21.11/builds/175/downloads/leaf-1.21.11-175.jar) [下载地址 2](https://github.com/Winds-Studio/Leaf/releases/download/ver-1.21.11/leaf-1.21.11-175.jar)
+
+**插件**：[AnarchyExploitFixes 2.7.12](https://modrinth.com/project/pILEwgSo) [下载地址](https://cdn.modrinth.com/data/pILEwgSo/versions/xCZkiqjU/AnarchyExploitFixes-Folia-2.7.12.jar), [Console Spam Fix : Reborn 1.12.0](https://modrinth.com/project/iXA8b67S) [下载地址](https://cdn.modrinth.com/data/iXA8b67S/versions/ZeSWvazB/ConsoleSpamFixReborn-1.12.0.jar), [EssentialsX 2.22.0](https://modrinth.com/project/hXiIvTyT) [下载地址](https://cdn.modrinth.com/data/hXiIvTyT/versions/nY6VN1XH/EssentialsX-2.22.0.jar), [EssentialsX Chat 2.22.0](https://modrinth.com/project/2qgyQbO1) [下载地址](https://cdn.modrinth.com/data/2qgyQbO1/versions/2k7YvKOk/EssentialsXChat-2.22.0.jar), [NBT-API 2.15.7](https://modrinth.com/project/nfGCP9fk) [下载地址](https://cdn.modrinth.com/data/nfGCP9fk/versions/9zLThg7h/item-nbt-api-plugin-2.15.7.jar), [LuckPerms 5.5.71](https://modrinth.com/project/Vebnzrzj) [下载地址](https://cdn.modrinth.com/data/Vebnzrzj/versions/b0mk8uS6/LuckPerms-Bukkit-5.5.71.jar), [MultiLogin 0.7.2](https://github.com/ccd2s/MultiLogin-Bukkit) [下载地址](https://github.com/ccd2s/MultiLogin-Bukkit/releases/download/v0.7.2/MultiLogin-Bukkit-0.7.2.jar), [PacketEvents 2.13.0](https://modrinth.com/project/HYKaKraK) [下载地址](https://cdn.modrinth.com/data/HYKaKraK/versions/h0ncTpUP/packetevents-spigot-2.13.0.jar), [PlaceholderAPI 2.12.2](https://modrinth.com/project/lKEzGugV) [下载地址](https://cdn.modrinth.com/data/lKEzGugV/versions/UmbIiI5H/PlaceholderAPI-2.12.2.jar), [ProtocolLib 5.4.0](https://github.com/dmulloy2/ProtocolLib) [下载地址](https://github.com/dmulloy2/ProtocolLib/releases/download/5.4.0/ProtocolLib.jar), [Raycasted Anti-ESP 0.7.1-Paper-0.10.1](https://modrinth.com/project/bCjNZu0C) [下载地址](https://cdn.modrinth.com/data/bCjNZu0C/versions/XOQeZYTc/RaycastedAntiESP-0.7.1-Paper-0.10.1-RELEASE.jar), [Skript 2.15.4](https://modrinth.com/project/xFNYAvMk) [下载地址](https://cdn.modrinth.com/data/xFNYAvMk/versions/2QwoQvep/Skript-2.15.4.jar), [skript-reflect 2.6.3](https://github.com/SkriptLang/skript-reflect) [下载地址](https://github.com/SkriptLang/skript-reflect/releases/download/v2.6.3/skript-reflect-2.6.3.jar), [TAB 6.0.3](https://modrinth.com/project/gG7VFbG0) [下载地址](https://cdn.modrinth.com/data/gG7VFbG0/versions/MsHr6ITb/TAB%20v6.0.3%20-%20Vanilla.jar), [VaultUnlocked 2.20.2](https://modrinth.com/project/ayRaM8J7) [下载地址](https://cdn.modrinth.com/data/ayRaM8J7/versions/cLNipSgw/VaultUnlocked-2.20.2.jar)
