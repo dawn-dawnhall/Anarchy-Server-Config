@@ -1,0 +1,22 @@
+import:
+    moe.caa.multilogin.api.MultiLoginAPIProvider
+    moe.caa.multilogin.api.service.ServiceType
+
+on join:
+    wait 5 ticks
+    set {_api} to MultiLoginAPIProvider.getApi()
+    if {_api} is not set:
+        send "&c无法获取登录 API。" to player
+        stop
+    set {_data} to {_api}.getPlayerData(player's uuid)
+    if {_data} is not set:
+        send "&c无法获取登录数据。" to player
+        stop
+    set {_service} to {_data}.getLoginService()
+    set {_type} to {_service}.getServiceType()
+    if {_type} is ServiceType.OFFICIAL:
+        set the player's group to "officiallogin"
+        send "&a已作为正版玩家成功登录。" to player
+    else:
+        set the player's group to "otherlogin"
+        send "&a已成功登录。" to player

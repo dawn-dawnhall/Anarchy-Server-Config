@@ -1,0 +1,13 @@
+#Owner:
+#  tabprefix: "&0&l[&a&lOwner&0&l] &a"
+#  tagprefix: "&2&lOwner &a"
+officiallogin:
+  tabprefix: "&a● &f"
+  tagprefix: "&a● &f"
+otherlogin:
+  tabprefix: "&8● &7"
+  tagprefix: "&8● &7"
+ # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
+_DEFAULT_:
+  tabprefix: "&8? &7"
+  tagprefix: "&8? &7"

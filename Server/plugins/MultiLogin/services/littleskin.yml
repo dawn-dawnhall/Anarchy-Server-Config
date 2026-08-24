@@ -1,0 +1,19 @@
+# Below, only the most basic configuration is provided.
+# You can refer to the template file to complete all configurations.
+
+# Please edit before use.
+id: 1
+
+name: 'LittleSkin'
+# Don't change it unless you really want to.
+serviceType: BLESSING_SKIN
+yggdrasilAuth:
+  blessingSkin:
+    apiRoot: 'https://littleskin.cn/api/yggdrasil'
+
+skinRestorer:
+  restorer: 'LOGIN'
+  method: 'URL'
+  timeout: 10000
+  retry: 2
+  retryDelay: 5000
