@@ -6,11 +6,11 @@ on join:
     wait 5 ticks
     set {_api} to MultiLoginAPIProvider.getApi()
     if {_api} is not set:
-        send "&c无法获取登录 API。" to player
+        send "&c无法获取登录 API，请重试，如果问题仍存在，请联系管理员。" to player
         stop
     set {_data} to {_api}.getPlayerData(player's uuid)
     if {_data} is not set:
-        send "&c无法获取登录数据。" to player
+        send "&c无法获取登录数据，请重试，如果问题仍存在，请联系管理员。" to player
         stop
     set {_service} to {_data}.getLoginService()
     set {_type} to {_service}.getServiceType()
